@@ -9,13 +9,12 @@ export const usersRoute = express.Router();
 
 // Main users route
 usersRoute.get('/users', async (req: Request, res: Response) => {
-  const usersToGenerate = Number(process.env.USERS_AMOUNT) ?? 10;
   // Generating data with the same structure
   const customUser: User[] = faker.helpers.multiple(generateOwnUser, {
     count: 1,
   });
   const randomUserList: User[] = faker.helpers.multiple(createRandomUsers, {
-    count: usersToGenerate,
+    count: 10,
   });
 
   // Contact my user with randomly generated data
