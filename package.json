@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^8.3.1",
-    "@types/lodash": "^4.14.202"
+    "@types/lodash": "^4.14.202",
+    "faker": "5.5.3"
   }
 }
